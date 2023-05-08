@@ -1,0 +1,67 @@
+<html>
+<head>
+    <html lang="en"></html>
+    <meta charset="UTF-8">
+    <title>review page</title>
+    <link rel="stylesheet" href="review.css">
+    <script type="text/javascript">  
+        function homemove() { 
+           window.location.href="home.html";
+        }
+         </script> 
+</head>
+<body>
+    <form  class="formm">
+        <center><h1>Rate Us</h1></center> 
+        <div class="data">
+            <label for="name" textalign="left">Name</label>
+            <input type="text" name="name"class="inputdata" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email"  class="inputdata" placeholder="Enter your Email" required>
+
+        
+            <label for="fas fa-phone">Phone Number</label>
+            <input type="text" name="Phone"  class="inputdata" placeholder="Enter your Phone number" required>
+
+            <label for="address">Address (optional)</label>
+            <input type="text" name="address" class="inputdata" placeholder="Enter your address">
+        </div>
+        <div class="data">
+            <p>Which best describe your opinion about us?</p>
+            <select name="select" required class="inputdata">
+                <option value disabled selected >Select your opinion</option>
+                <option value="excellent" >excellent</option>
+                <option value="good" >good</option>
+                <option value="fair"  >fair</option>
+            </select>
+        </div>
+        <div class="data">
+            <p >How did you know about FAST AND FRESH ?</p>
+            <label ><input type="radio"class="inputRadio">Social Media </label>
+            <label ><input type="radio"class="inputRadio">Friend</label>
+            <label ><input type="radio"class="inputRadio">TV ads</label>
+            <label ><input type="radio"class="inputRadio">Other</label>
+        </div>
+        
+        <div class="data">
+            <p> What would you like to see improved ? </p>
+            <label ><input type="checkbox" class="checkbox" > Vegetable</label>
+            <label ><input type="checkbox" class="checkbox" > Fruit</label>
+            <label ><input type="checkbox" class="checkbox" > Meat</label>
+            <label ><input type="checkbox" class="checkbox" > Dairy</label>
+            <label ><input type="checkbox" class="checkbox" > Dessert</label>
+
+        </div> 
+        <div class="data">
+            <p >Give us your feedback!</p>
+            <textarea name="feedback"  cols="30" rows="3"  class="textarea" placeholder="Enter your feedback here..."></textarea>
+        </div>
+        <div class="btndata">
+           <center> <button type="submit" id="submit" class="btn">Submit</button> </center>
+            <br>
+           <center> <a href="#" onclick="homemove()" class="btn" >back to home page </a> </center> 
+        </div>
+     </form> 
+</body>
+</html>

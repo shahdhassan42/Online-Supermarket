@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+    <html lang="en"></html>
+    <meta charset="UTF-8">
+    <title>Meat</title>
+    <link rel="stylesheet" href="category.css">
+    <script src="cart.js" arsync></script>
+    <script type="text/javascript"> 
+      function vegmove() { 
+         window.location.href="vegadmin.html"
+      }
+      function fruitsmove() { 
+         window.location.href="fruitadmin.html"
+      }
+      function meatsmove() { 
+         window.location.href="meatsadmin.html"
+      }
+      function dairymove() { 
+         window.location.href="dairyadmin.html"
+      }
+      function candymove() { 
+         window.location.href="candyadmin.html"
+      }
+      </script>
+    </head>
+      <body>
+         <body>
+            <header> 
+               <h1>Category </h1>
+               <nav class="navbar">
+                   <ul>
+                       <li><a href="#" onclick="vegmove()">Vegetable</a></li>
+                       <li><a href="#"onclick="fruitsmove()" >Fruit</a></li>
+                       <li><a href="#" onclick="meatsmove()" >Meat</a></li>
+                       <li><a href="#" onclick="dairymove()" >Dairy</a></li>
+                       <li><a href="#"onclick="candymove()">Dessert</a></li>
+                       </ul>
+               </nav>
+           </header> 
+           <br>
+            <div class="container">
+               <h3 class="title"> organic products </h3>
+               <div class="producttss">
+                  <div class="product" data-name="p-1">
+                     <img class="shopItemImage" src="img/mwat.jpg" style width="250" height="250"> 
+                     <h3 class="shopItemTitle">meat</h3> 
+                     <div class="price shopItemPrice">$200.00</div>
+                     <div class="buttons">
+                        <a href="#" class="buy btn btnBuy btnBuyNow">buy now</a>
+                        <a href="#" class="buy btn removeButton btnBuyNow">remove</a>
+                     </div>
+                  </div>
+                  <div class="product" data-name="p-2">
+                     <img class="shopItemImage" src="img/chicken.jpg" style width="250" height="250" >
+                     <h3 class="shopItemTitle">chicken</h3>
+                     <div class="price shopItemPrice">$70.00</div>
+                     <div class="buttons">
+                        <a href="#" class="buy btn btnBuy btnBuyNow">buy now</a>
+                        <a href="#" class="buy btn removeButton btnBuyNow">remove</a>
+                     </div>
+                  </div>
+                  <div class="product" data-name="p-3">
+                     <img class="shopItemImage" src="img/shrimp2.webp" style width="250" height="250">
+                     <h3 class="shopItemTitle">fish</h3>
+                     <div class="price shopItemPrice">$120.00</div>
+                     <div class="buttons">
+                        <a href="#" class="buy btn btnBuy btnBuyNow">buy now</a>
+                        <a href="#" class="buy btn removeButton btnBuyNow">remove</a>
+                     </div>
+                  </div>    
+               </div>
+            </div>  
+      </body>

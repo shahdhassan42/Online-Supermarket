@@ -1,0 +1,199 @@
+body
+{
+    font-family: 'roboto',sans-serif;
+    background-size:cover;
+
+    /* background-position: center; */
+}
+h1
+{
+    text-align: center;
+    color: black;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    text-transform: capitalize;
+    box-sizing: border-box;
+     text-decoration: none; 
+
+}
+header
+{
+    /* position: fixed; */
+    top: 0; left:0 ; right:0 ;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.1);
+    padding: 20px 7px;
+     display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color:transparent;
+}
+.category
+{
+    font-weight: bolder;
+    font-size:25px ;
+    color:#333;
+}
+.navbar ul
+{
+    list-style:none ;
+}
+
+.navbar ul li
+{
+    position: relative;
+    float: left;
+}
+.navbar ul li a
+{
+    font-size: 20px;
+    padding:20px ;
+    color: #333;
+    display: block;
+}
+.navbar ul li :hover
+{
+    background-color:cadetblue;
+    color: #fff;
+}
+.navbar ul li ul 
+{
+    position: absolute;
+    left: 0%;
+    width: 200px;
+    background-color: transparent;
+}
+
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:3rem 2rem;
+ }
+ 
+ .container .title{
+    font-size: 3.5rem;
+    color:#444;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+ }
+ 
+ .container .producttss{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:2rem;
+ }
+ 
+ .container .producttss .product{
+    text-align: center;
+    padding:3rem 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    outline: .1rem solid #ccc;
+    outline-offset: -1.5rem;
+    cursor: pointer;
+ }
+ 
+ .container .producttss .product:hover{
+    outline: .2rem solid #222;
+    outline-offset: 0;
+ }
+ 
+ .container .producttss .product img{
+    height: 25rem;
+ }
+ 
+ .container .producttss .product:hover img{
+    transform: scale(.9);
+ }
+ 
+ .container .producttss .product h3{
+    padding:.5rem 0;
+    font-size: 2rem;
+    color:#444;
+ }
+ 
+ .container .producttss .product:hover h3{
+    color:#27ae60;
+ }
+ 
+ .container .producttss .product .price{
+    font-size: 2rem;
+    color:#444;
+ }
+ .buttons{
+     display: flex;
+     gap:1.5rem;
+     flex-wrap: wrap;
+     margin-top: 1rem;
+  }
+  .buttons a{
+     flex:1 1 16rem;
+     padding:1rem;
+     font-size: 1.8rem;
+     color:#444;
+     border:.1rem solid #444;
+  }
+  
+  .buttons a.buy:hover{
+     background: #444;
+     color:#fff;
+  }
+
+  .adminbutton{
+   text-align: center;
+   display: flex;
+     gap:1rem;
+     flex-wrap: wrap;
+     margin-top: 0.5rem;
+  }
+
+  .adminbutton a{
+   flex:1 1 16rem;
+   padding:1rem;
+   font-size: 1.5rem;
+   color:#445;
+   border:.1rem solid #445;
+  }
+ 
+  .adminbutton a.button:hover{
+   background: #445;
+   color:#fff;
+}
+.footer{
+   background-color: rgb(255, 240, 249);
+}
+
+
+.footer .box-container .box h3{
+ font-size: 2.5rem;
+ color: black;
+ padding: 1rem 0;
+}
+
+.footer .box-container .box .links{
+   display: block;
+   font-size: 1.5rem;
+   padding: 1rem 0;
+}
+.footer .box-container .box p{
+   line-height: 1.8;
+   font-size: 1.5rem;
+   color: #222;
+   padding: 1rem 0;
+}
+.box-container{
+    display: flex; 
+}
+.box{
+   width: 35%;
+   padding: 10px;
+}
+.box .social-icons i{
+	font-size: 40px;
+   color:blueviolet;
+
+}

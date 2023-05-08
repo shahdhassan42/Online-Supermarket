@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+    <head>
+    <html lang="en"></html>
+    <meta charset="UTF-8">
+    <title>Fruit</title>
+    <link rel="stylesheet" href="category.css">
+    <script src="cart.js" arsync></script>
+    <script type="text/javascript"> 
+      function vegmove() { 
+         window.location.href="veg.html"
+      }
+      function fruitsmove() { 
+         window.location.href="fruit.html"
+      }
+      function meatsmove() { 
+         window.location.href="meats.html"
+      }
+      function dairymove() { 
+         window.location.href="dairy.html"
+      }
+      function candymove() { 
+         window.location.href="candy.html"
+      }
+      function reviewmove() { 
+           window.location.href="review.html"
+        }
+      </script>
+   </head>
+      <body>
+         <body>
+            <header> 
+               <h1>Category </h1>
+               <nav class="navbar">
+                   <ul>
+                       <li><a href="#" onclick="vegmove()">Vegetable</a></li>
+                       <li><a href="#"onclick="fruitsmove()" >Fruit</a></li>
+                       <li><a href="#" onclick="meatsmove()" >Meat</a></li>
+                       <li><a href="#" onclick="dairymove()" >Dairy</a></li>
+                       <li><a href="#"onclick="candymove()">Dessert</a></li>
+                       <li><a href="#" onclick="reviewmove()" >Rate Us</a></li>
+                       </ul>
+               </nav>
+           </header> 
+           <br>
+            <div class="container">
+               <h3 class="title"> organic products </h3>
+               <div class="producttss">
+                  <div class="product" data-name="p-1">
+                     <img class="shopItemImage" src="img/1.png" style width="250" height="250"> 
+                     <h3 class="shopItemTitle">strawberry</h3> 
+                     <div class="price shopItemPrice">$5.00</div>
+                     <div class="buttons">
+                        <a href="#" class="buy btn btnBuy btnBuyNow">buy now</a>
+                     </div>
+                  </div>
+                  <div class="product" data-name="p-2">
+                     <img class="shopItemImage" src="img/mango.jfif" style width="250" height="250" >
+                     <h3 class="shopItemTitle">mango</h3>
+                     <div class="price shopItemPrice">$9.00</div>
+                     <div class="buttons">
+                        <a href="#" class="buy btn btnBuy btnBuyNow">buy now</a>
+                     </div>
+                  </div>
+                  <div class="product" data-name="p-3">
+                     <img class="shopItemImage" src="img/cart-img-1.png" style width="250" height="250">
+                     <h3 class="shopItemTitle">watermelon</h3>
+                     <div class="price shopItemPrice">$15.00</div>
+                     <div class="buttons">
+                        <a href="#" class="buy btn btnBuy btnBuyNow">buy now</a>
+                     </div>
+                  </div>
+                  <div class="product" data-name="p-4">
+                     <img class="shopItemImage" src="img/banana.webp" style width="250" height="250">
+                     <h3 class="shopItemTitle">banana</h3>
+                     <div class="price shopItemPrice">$6.00</div>
+                     <div class="buttons">
+                        <a href="#" class="buy btn btnBuy btnBuyNow">buy now</a>
+                     </div>
+                  </div>
+            
+                  <div class="product" data-name="p-5" style width="250" height="250">
+                     <img class="shopItemImage" src="img/product-6.png" >
+                     <h3 class="shopItemTitle">avocado</h3>
+                     <div class="price shopItemPrice">$12.00</div>
+                     <div class="buttons">
+                        <a href="#" class="buy btn btnBuy btnBuyNow">buy now</a>
+                     </div>
+                  </div>
+            
+                  <div class="product" data-name="p-6">
+                     <img class="shopItemImage" src="img/apple.jfif" alt="">
+                     <h3 class="shopItemTitle">apple</h3>
+                     <div class="price shopItemPrice">$4.00</div>
+                     <div class="buttons">
+                        <a href="#" class="buy btn btnBuy btnBuyNow">buy now</a>
+                     </div>
+                  </div>
+               </div>
+            </div>     
+            <section class="container contentSection">
+               <h2 class="sectionHeader">CART</h2>
+               <div class="cartRow">
+                   <span class="cartItem cartHeader cartColumn">ITEM</span>
+                   <span class="cart-price cartHeader cartColumn">PRICE</span>
+                   <span class="cart-quantity cartHeader cartColumn">QUANTITY</span>
+               </div>
+               <div class="cartItems">
+               </div>
+               <div class="cartTotal">
+                   <strong class="cartTotalTitle">Total</strong>
+                   <span class="cartTotalPrice">$0</span>
+               </div>
+               <button class="btn btnBuy purchaseBtn" type="button">PURCHASE</button>
+           </section>               
+      </body>

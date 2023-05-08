@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+    <html lang="en"></html>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <link rel="stylesheet" href="home.css">
+    <script type="text/javascript"> 
+        function vegmove() { 
+           window.location.href="vegadmin.html"
+        }
+        function fruitsmove() { 
+           window.location.href="fruitadmin.html"
+        }
+        function meatsmove() { 
+           window.location.href="meatsadmin.html"
+        }
+        function dairymove() { 
+           window.location.href="dairyadmin.html"
+        }
+        function candymove() { 
+           window.location.href="candyadmin.html"
+        }
+        function changebgcolor(color) {
+           document.bgColor=color;
+        }
+        </script>
+    </head>
+    <body >
+         <header> 
+            <h1>Category </h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" onclick="vegmove()">Vegetable</a></li>
+                    <li><a href="#"onclick="fruitsmove()" >Fruit</a></li>
+                    <li><a href="#" onclick="meatsmove()" >Meat</a></li>
+                    <li><a href="#" onclick="dairymove()" >Dairy</a></li>
+                    <li><a href="#" onclick="candymove()" >Dessert</a></li>
+   
+                    </ul>
+            </nav>
+        </header> 
+        <br>
+        <div class="container">
+            <div class="producttss">
+               <div class="product" data-name="p-1">
+                  <img src="veg.jfif" style width="450" height="450"> 
+                  <h3>Vegetable</h3> 
+                  <div class="buttons">
+                     <a href="#" class="buy" onclick="vegmove()">Order</a>
+                  </div>
+               </div>
+               <div class="product" data-name="p-2">
+                  <img src="fruits.jpg" style width="450" height="450" >
+                  <h3>fruit</h3>
+                  <div class="buttons">
+                     <a href="#" class="buy" onclick="fruitsmove()">Order</a>
+                  </div>
+               </div>
+               <div class="product" data-name="p-3">
+                <img src="img/meats.jpg" style width="450" height="450"> 
+                <h3>meat</h3> 
+                <div class="buttons">
+                   <a href="#" class="buy"onclick="meatsmove()">Order</a>
+                </div>
+             </div>
+               <div class="product" data-name="p-4">
+                <img src="dairy.jpg" style width="450" height="450"> 
+                <h3>dairy</h3> 
+                <div class="buttons">
+                   <a href="#" class="buy" onclick="dairymove()">Order</a>
+                </div>
+             </div>
+               <div class="product" data-name="p-5">
+                  <img src="de.jpg" style width="450" height="450">
+                  <h3>Dessert</h3>
+                  <div class="buttons">
+                     <a href="#" class="buy" onclick="candymove()">order</a>
+                  </div>
+                </div>
+            </div>
+            <div class="adminbutton">
+                <a href="#" class="button" onclick="changebgcolor('#9b59b6')">change background color</a>
+            </div>
+   </body>
+</html>
